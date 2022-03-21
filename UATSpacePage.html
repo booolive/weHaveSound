@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<!--
+    i am boone oliverio
+    i made this on 2/7/2022
+    for csc102 at uat
+    recursive loop w/functioning stop button & conditional for halfway loop
+    fulfills both change order and efficiency assignments
+
+    yell at me at
+    booolive@uat.edu
+-->
+
+<head>
+    <script src="code.js"></script>
+    <title>
+        boone oliverio is logged in
+    </title>
+    <!-- i want it pink -->
+    <style>
+        body {
+            background-color: rgb(202,101,202);
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <td><img src="UATspaceLogo-1.jpg"></td>
+        <td><h1>UAT SPACE PROGRAM</h1></td>
+    </table>
+
+    <table id="data" border="2" width="70%">
+        <col style="width: 35%">
+        <thead>
+            <th>data type</th>
+            <th>value</th>
+        </thead>
+        <tbody>
+            <tr id="seconds">     <td>time that has gone by</td><td>15 seconds</td></tr>
+            <tr id="latitude">    <td>latitude             </td><td>0         </td></tr>
+            <tr id="longitude">   <td>longitude            </td><td>0         </td></tr>
+            <tr id="gpsAltitude"> <td>GPS altitude         </td><td>0         </td></tr>
+            <tr id="bmpAltitude"> <td>BMP altitude         </td><td>30383.04  </td></tr>
+            <tr id="bmpPressure"> <td>BMP pressure         </td><td>2.34      </td></tr>
+            <tr id="bmpTemp">     <td>BMP temperature      </td><td>0         </td></tr>
+            <tr id="digTemp">     <td>Digital temperature  </td><td>24.12     </td></tr>
+            <tr id="cssTemp">     <td>CSS temperature      </td><td>25        </td></tr>
+            <tr id="csseCO2">     <td>CSS eCO2             </td><td>400       </td></tr>
+            <tr id="cssTVOC">     <td>CSS TVOC             </td><td>0         </td></tr>
+            <tr id="UV">          <td>UV                   </td><td>0         </td></tr>
+            <tr id="accelX">      <td>Accel X              </td><td>-0.87     </td></tr>
+            <tr id="accelY">      <td>Accel Y              </td><td>-0.02     </td></tr>
+            <tr id="accelZ">      <td>Accel Z              </td><td>9.61      </td></tr>
+            <tr id="magnetX">     <td>Magnetic X           </td><td>0.13      </td></tr>
+            <tr id="magnetY">     <td>Magnetic Y           </td><td>0.57      </td></tr>
+            <tr id="magnetZ">     <td>Magnetic Z           </td><td>-0.24     </td></tr>
+            <tr id="gyroX">       <td>Gyro X               </td><td>4.66      </td></tr>
+            <tr id="gyroY">       <td>Gyro Y               </td><td>0.01      </td></tr>
+            <tr id="gyroZ">       <td>Gyro Z               </td><td>-0.4      </td></tr>
+        </tbody>
+    </table>
+
+    <marquee scrollamount="15" direction="left" ><h2>UAT SPACE PROGRAM OPERATOR LOG IN</h2></marquee>
+    <marquee scrollamount="15" direction="right"><h2>UAT SPACE PROGRAM YOU HAVE LOGGED IN</h2></marquee>
+
+    <button id="startButton" onclick = "startReadings();">
+        Start
+    </button>
+    <button id="stopButton"  onclick = "stopReadings();">
+        Stop
+    </button>
+</body>
+
+</html>
